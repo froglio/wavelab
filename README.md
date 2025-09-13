@@ -1,6 +1,12 @@
-# WaveLab — Professional Surf Analysis Platform (🚧 WIP)
+# WaveLab — Professional Surf Analysis Platform (WIP)
 
-WaveLab is a web platform for professional surf analysis that helps subscribers improve their surfing by studying in-depth analyses of professional athletes. The app combines curated video content, frame-by-frame annotations, visual overlays, and expert commentary so users can learn technique, timing, and strategy from the best.
+[![Project Status](https://img.shields.io/badge/status-WIP-orange)](#)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
+[![Issues](https://img.shields.io/github/issues/froglio/wavelab)](#)
+
+🎯 WaveLab is a web platform for professional surf analysis that helps subscribers improve their surfing by studying in-depth analyses of professional athletes. The app combines curated video content, frame-by-frame annotations, visual overlays, and expert commentary so users can learn technique, timing, and strategy from the best.
+
+---
 
 ## Table of Contents
 
@@ -9,43 +15,47 @@ WaveLab is a web platform for professional surf analysis that helps subscribers 
 - Features
 - Tech Stack
 - Project Structure
-- Installation
+- Getting Started
 - Development
-- Usage
-- Screenshots / Demo
+- Configuration
 - Contributing
-- Credits
-- License
+- Credits & Inspiration
+
+---
 
 ## About
 
-WaveLab is intended for surfers, coaches, and analysts who want to improve performance through data-informed study. Subscribers get access to curated analyses of professional surfers with visual annotations, breakdowns of critical maneuvers, and comparison tools.
+WaveLab provides curated surf analysis content for surfers, coaches, and analysts. Each analysis is designed to be actionable: frame annotations, visual overlays and focused lessons to make it easier to emulate and practice professional-level technique.
 
 ## Goals
 
-- Help users accelerate skill acquisition by studying professionals
-- Provide clear, visual, and actionable analysis for common maneuvers
-- Offer a subscription model to unlock premium curated content and expert sessions
-- Maintain a modern, accessible, and responsive UI for web and mobile
+- Accelerate learning through visual and data-informed analysis
+- Provide clear, bite-sized lessons and full breakdowns of maneuvers
+- Host subscriber-only curated content and playlists
+- Maintain a modern, accessible, responsive interface for web and mobile
 
 ## Features
 
-- Video playback with annotated segments and frame-by-frame review
-- Visual overlays to highlight foot placement, body position, trajectory, and stance
-- Curated lesson collections organized by maneuver type, wave condition, or athlete
-- Animated previews and interactive UI components
-- Subscriber-only premium content and saved playlists
+- ▶️ Video playback with annotated segments and frame-by-frame review
+- 🔍 Visual overlays for foot placement, body posture, line and timing
+- 📚 Curated lesson collections (maneuver, athlete, condition filters)
+- ✨ Animated previews and interactive UI components
+- 🔐 Subscription-based access for premium content
 
 ## Tech Stack
 
 - React 18
-- Vite (development and build)
+- Vite (dev server & build)
 - Tailwind CSS (styling)
 - GSAP (animations)
 - react-icons (icons)
-- Optional utilities: react-use, axios (or fetch) for API calls
+- Optional: react-use, axios (for API calls)
+
+---
 
 ## Project Structure
+
+Root layout (example):
 
 - index.html
 - package.json
@@ -62,76 +72,87 @@ WaveLab is intended for surfers, coaches, and analysts who want to improve perfo
   - img/
   - videos/
 
-## Installation
+---
 
-1. Clone the repository:
+## Getting Started
+
+Requirements:
+
+- Node.js 16+ (or current LTS)
+- npm (or yarn)
+
+Quick start:
+
+1. Clone the repository
 
    git clone <repository-url>
 
-2. Change into project directory:
+2. Change into the project folder
 
-   cd award-winning-website
+   cd wavelab
 
-3. Install dependencies:
+3. Install dependencies
 
    npm install
 
-4. Start development server:
+4. Start the dev server
 
    npm run dev
 
-5. Build production bundle:
+5. Build for production
 
    npm run build
 
-6. Run linting (if configured):
+Common scripts (package.json):
 
-   npm run lint
+- npm run dev — start Vite dev server
+- npm run build — create production build
+- npm run preview — preview production build locally
+- npm run lint — run linters (if configured)
+
+---
 
 ## Development
 
-- Entry point: `src/main.jsx`
+- Entry: `src/main.jsx`
 - Main app: `src/App.jsx`
 - Global styles: `src/index.css`
 - Components: `src/components/`
+- Pages: `src/pages/`
 - Public assets: `public/img`, `public/videos`
 
-Tips:
+---
 
-- Add demo videos or screenshots to `public/videos` and `public/img` to make testing easier.
-- Keep components small and focused. Use Tailwind utility classes and centralize animation logic where appropriate.
+## Configuration
 
-## Usage
+Environment variables (example):
 
-After starting the dev server, open the local URL shown by Vite (typically http://localhost:5173). Explore pages, test video playback, and try component interactions.
+- Create a `.env` file for API keys and configuration used in development.
+- Example values: API_BASE_URL, VITE_APP_ANALYTICS_KEY
 
-If the project integrates an API for user subscriptions or analysis data, configure environment variables appropriately (e.g., `.env` files) and provide mock data for local development.
+For subscription/payment integration locally, provide mock endpoints or feature flags to disable live billing during development.
 
-## Screenshots / Demo
-
-Add representative screenshots or short GIFs to the `public/img` folder and reference them in this README to showcase the UI. Example assets that may exist in the repo:
-
-- `public/img/logo.png`
-- `public/img/about.webp`
-- `public/videos/hero-1.mp4`
-
-To embed screenshots in GitHub's README, use the relative path: `![Alt text](public/img/screenshot.png)`.
+---
 
 ## Contributing
 
-Contributions are welcome. Please follow these steps:
+Contributions are welcome. Please follow these guidelines:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feat/your-feature`)
-3. Commit your changes (`git commit -m "Add feature"`)
-4. Push to your branch (`git push origin feat/your-feature`)
-5. Open a Pull Request describing the change
+2. Create a new branch: `git checkout -b feat/your-feature`
+3. Commit your changes: `git commit -m "feat: add ..."`
+4. Push your branch: `git push origin feat/your-feature`
+5. Open a Pull Request with a clear description
 
-Please open issues for bugs or feature requests before implementing large changes. Follow the existing code style and run linting/tests before submitting a PR.
+Guidelines:
 
-## Credits
+- Keep PRs small and focused.
+- Add tests for new logic where appropriate.
+- Run linters and format code before opening a PR.
+
+---
+
+## Credits & Inspiration
 
 - Developed by Fabricio Roglio de Sousa
-- Built with React and GSAP
-
-Note: The project structure and layout were inspired by https://zentry.com/.
+- Project structure and layout also influenced by: https://zentry.com/
