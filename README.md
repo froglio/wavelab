@@ -27,6 +27,16 @@
 
 WaveLab provides curated surf analysis content for surfers, coaches, and analysts. Each analysis is designed to be actionable: frame annotations, visual overlays and focused lessons to make it easier to emulate and practice professional-level technique.
 
+---
+
+## 📺 Preview
+
+Live demo: https://wavelab.vercel.app/
+
+![Preview screenshot](public/img/preview.png)
+
+---
+
 ## Goals
 
 - Accelerate learning through visual and data-informed analysis
